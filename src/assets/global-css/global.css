@@ -1,0 +1,227 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "spartan-bold";
+  scr: url(../fonts/LeagueSpartan-Bold.otf);
+}
+
+:root {
+  --color-my-secound: #93c1f3;
+}
+
+body {
+  background-image: url(../images/Background.png);
+  background-attachment: scroll;
+  background-position: left top;
+  box-sizing: border-box;
+  background-size: contain;
+}
+
+nav {
+  font-family: "spartan-bold";
+  font-weight: 600;
+}
+.h80 {
+  height: 80vh;
+}
+.banner-pos {
+  top: 25vh;
+  left: 0;
+}
+.text-my2color {
+  color: var(--color-my-secound);
+}
+.bg-mycolor {
+  background: var(--color-my-secound);
+}
+.text-spartan {
+  font-family: "spartan";
+}
+.disactive {
+  display: none;
+}
+.active {
+  display: "inline-block";
+}
+
+
+.h45vh {
+  height: 45vh;
+}
+.mt-p5 {
+  margin-top: 5px;
+}
+.an {
+  -webkit-animation-name: fadedown;
+  animation-name: fadedown;
+-webkit-animation-duration: 1s;
+  animation-duration: 1s;
+-webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+-webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+.an2{
+  -webkit-animation-name: fadedown;
+  animation-name: fadedown;
+-webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+-webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+-webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+@-webkit-keyframes fadedown {
+  from {
+    left: -1000px;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes fadedown {
+  from {
+    left: -1000px;
+  }
+  to {
+    left: 0;
+  }
+}
+.tracking-lg {
+  letter-spacing: 6.5px;
+}
+.custom-border-b {
+  border-bottom: 1px solid var(--color-my-secound);
+}
+.bg-custom {
+  background: #ececec;
+}
+.bgf5 {
+  background: #f5f5f5;
+}
+.bottom-10 {
+  bottom: -11%;
+}
+
+.text-custom-blue {
+  color: #8dc2f4;
+}
+.bg-modal{
+  background-color: #333; 
+  //background-color: rgba(0,0,0,0.4);
+}
+
+.h-half{
+  height:50vh;
+}
+.important-block{
+  display:block !important;
+}
+@media screen and (min-width: 1024px){
+  #root{
+    padding: 33px 7.5% 78px 7.5%;
+  }
+  .w29vw{
+    width: 29vw;
+  }
+  .left-85{
+    left: 85%;
+  }
+  .h55vh{
+    height: 50vh;
+  }
+  .margin-left-3p{
+    margin-left: 13%;
+  }
+}
+@media screen and (min-width: 767px) and (max-width:1024px){
+  #root{
+    padding: 33px 1.5% 78px 1.5%;
+  }
+  .w29vw{
+    width: 39vw;
+  }
+  .left-85{
+    left: 70%;
+  }
+  .h55vh{
+    height: 50vh;
+  }
+  .margin-left-3p{
+    margin-left: 13%;
+  }
+  .w-half{
+    width: 30vw;
+  }
+  
+}
+@media screen and (min-width: 640px) and (max-width:767px){
+  #root{
+    padding: 33px 1% 78px 1%;
+  }
+  .w29vw{
+    width: 49vw;
+  }
+  .left-85{
+    left: 85%;
+  }
+  .h55vh{
+    height: 130vh;
+  }
+  .margin-left-3p{
+    margin-left: 7%;
+  }
+  .p-link{
+    padding: 1rem !important;
+  }
+  .mb-link{
+    margin-bottom: 2.5rem !important;
+  }
+  .link-color{
+    color: white !important;
+  }
+  .w-half{
+    width: 30vw;
+  }
+}
+@media screen and (max-width:640px){
+  #root{
+    padding: 33px 0.5% 78px 0.5%;
+  }
+  .w29vw{
+    width: 80vw;
+  }
+  .left-85{
+    left: 85%;
+  }
+  .h55vh{
+    height: 180vh;
+  }
+  .margin-left-3p{
+    margin-left: 7%;
+  }
+  .p-link{
+    padding: 1rem;
+  }
+  .mb-link{
+    margin-bottom: 2.5rem;
+  }
+  .link-color{
+    color: white;
+  }
+  .w-half{
+    width: 50vw;
+  }
+  .h-23{
+    height: 23%;
+  }
+  .h300{
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 864px) and (max-width: 1360px){
+  .margin-left-3p{
+    margin-left: 11%;
+  }
+}

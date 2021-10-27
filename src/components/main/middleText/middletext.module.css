@@ -1,0 +1,20 @@
+.container{
+    margin-top:15%;
+    position:relative;
+}
+.container p{
+    margin:2% 0 0 0;
+    letter-spacing:5px;
+    font-weight:600;
+    font-size:0.7rem;
+}
+.container::after{
+    content:'';
+    width:2px;
+    height:70px;
+    position:absolute;
+    bottom: -120%;
+    left: 50%;
+    background:var(--color-my-secound);
+
+}

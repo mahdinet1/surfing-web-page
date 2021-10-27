@@ -1,0 +1,18 @@
+.link:hover:after{
+content:'';
+width:120px;
+height:2px;
+background:#93c1f3;
+position:absolute;
+bottom:-10px;
+left:5px;
+animation: link 0.8s ease 0s 1 normal forwards;
+}
+.link{
+    transition:all 0.5s ease-in-out;
+    position:relative;
+}
+@keyframes link{
+    from{transform: scale(0.5)}
+    to{transform: scale(1)}
+}
